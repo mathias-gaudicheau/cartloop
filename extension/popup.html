@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Cartloop</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+<!--
+En-tête bleu pétrole (cousin du bleu Courses U sans le copier) avec le résumé de la semaine,
+corps blanc en lignes simples, quantité en pastille à gauche, case à cocher à droite. Voir DESIGN.md.
+-->
+  <header class="bandeau">
+    <div class="bandeau-haut">
+      <img class="logo" src="icones/logo-bandeau.svg" alt="" width="24" height="24">
+      <span class="marque">Cartloop</span>
+      <span class="semaine" id="semaine"></span>
+    </div>
+    <p class="resume" id="resume"></p>
+    <div class="jauge" id="jauge" hidden><i id="jauge-remplie"></i></div>
+  </header>
+
+  <main id="contenu" class="contenu" aria-live="polite"></main>
+
+  <footer class="pied">
+    <button id="remplir" class="bouton" type="button">Remplir mon panier</button>
+    <p class="note" id="note" hidden></p>
+    <nav class="liens">
+      <button type="button" id="relire" class="lien">Relire mes commandes</button>
+      <button type="button" id="refaire" class="lien">Refaire ma liste</button>
+      <button type="button" id="sauvegarde" class="lien">Sauvegarde</button>
+    </nav>
+  </footer>
+
+  <script src="rythme.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

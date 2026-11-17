@@ -1,0 +1,47 @@
+/* Page « Sauvegarde » : mêmes couleurs et même police que la fenêtre. */
+
+@font-face { font-family: "Figtree"; font-weight: 400; font-display: block; src: url("polices/figtree-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Figtree"; font-weight: 600; font-display: block; src: url("polices/figtree-latin-600-normal.woff2") format("woff2"); }
+@font-face { font-family: "Figtree"; font-weight: 700; font-display: block; src: url("polices/figtree-latin-700-normal.woff2") format("woff2"); }
+
+:root {
+  --petrole: #0e5a6e;
+  --petrole-fonce: #0a4757;
+  --petrole-pale: #e7f1f3;
+  --petrole-trait: #b9d3d9;
+  --encre: #182024;
+  --gris: #5f6c73;
+  --filet: #e9eef0;
+  --alerte: #b4441c;
+  --alerte-pale: #fbeee8;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { background: #fff; color: var(--encre); font: 400 15px/1.5 "Figtree", system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+.cadre { max-width: 620px; margin: 0 auto; padding: 0 16px; }
+
+.bandeau { background: var(--petrole); color: #fff; padding: 14px 0; }
+.bandeau-haut { display: flex; align-items: center; gap: 9px; }
+.logo { border-radius: 6px; }
+.marque { font-weight: 700; font-size: 15px; }
+
+h1 { font-size: 26px; font-weight: 700; letter-spacing: -.01em; margin: 32px 0 8px; }
+h2 { font-size: 17px; font-weight: 600; margin: 0 0 4px; }
+.intro { color: var(--gris); margin: 0 0 8px; max-width: 60ch; }
+.etat { margin: 0 0 8px; font-weight: 600; color: var(--petrole); }
+section { padding: 22px 0; border-top: 1px solid var(--filet); }
+section p { margin: 0 0 14px; color: var(--gris); max-width: 60ch; }
+
+.bouton { display: inline-block; padding: 11px 18px; border: 0; border-radius: 10px; background: var(--petrole); color: #fff; font: 600 15px "Figtree", system-ui, sans-serif; cursor: pointer; }
+.bouton:hover { background: var(--petrole-fonce); }
+.bouton:focus-visible, input:focus-visible + .bouton { outline: 2px solid var(--petrole); outline-offset: 2px; }
+.bouton.secondaire { background: #fff; color: var(--petrole); border: 1px solid var(--petrole-trait); }
+.bouton.secondaire:hover { background: var(--petrole-pale); }
+.bouton:disabled { opacity: .5; cursor: default; }
+
+.apercu { margin-top: 16px; padding: 14px 16px; border-radius: 10px; background: var(--petrole-pale); }
+.apercu p { margin: 0 0 10px; color: var(--encre); }
+.apercu.alerte { background: var(--alerte-pale); }
+.apercu.alerte p { color: var(--alerte); }
+.apercu .ok { color: var(--petrole); font-weight: 600; margin: 0; }

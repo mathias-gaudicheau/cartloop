@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cartloop · Sauvegarde</title>
+  <link rel="icon" href="icones/icone-32.png">
+  <link rel="stylesheet" href="sauvegarde.css">
+</head>
+<body>
+  <header class="bandeau">
+    <div class="cadre bandeau-haut">
+      <img class="logo" src="icones/logo-bandeau.svg" alt="" width="24" height="24">
+      <span class="marque">Cartloop</span>
+    </div>
+  </header>
+
+  <main class="cadre">
+    <h1>Sauvegarde</h1>
+    <p class="intro">Tout ce que Cartloop sait (tes commandes mémorisées et ta liste) vit uniquement dans ce navigateur. Courses U n'affiche que tes 8 dernières commandes : si l'extension est supprimée ou réinstallée, le reste est perdu. Une sauvegarde de temps en temps l'évite.</p>
+    <p class="etat" id="etat-actuel"></p>
+
+    <section>
+      <h2>Faire une sauvegarde</h2>
+      <p>Un fichier que tu gardes où tu veux. Il contient la liste de tes achats : ne le partage pas.</p>
+      <button type="button" class="bouton" id="telecharger">Télécharger la sauvegarde</button>
+    </section>
+
+    <section>
+      <h2>Restaurer une sauvegarde</h2>
+      <p>Les commandes du fichier s'ajoutent à celles déjà en mémoire, rien n'est effacé. Ta liste de base est remplacée par celle du fichier.</p>
+      <label class="bouton secondaire" for="fichier">Choisir le fichier…</label>
+      <input type="file" id="fichier" accept=".json,application/json" hidden>
+      <div id="apercu" class="apercu" hidden></div>
+    </section>
+  </main>
+
+  <script src="sauvegarde.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "Cartloop",
+  "version": "0.6.1",
+  "description": "Ta liste de courses Courses U en un clic : Cartloop apprend ton rythme d'achat et te rappelle ce qui va manquer. Outil indépendant, non affilié à Courses U.",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://www.coursesu.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.coursesu.com/*"
+      ],
+      "js": [
+        "lecture-commandes.js",
+        "panier.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Cartloop",
+    "default_icon": {
+      "16": "icones/icone-16.png",
+      "32": "icones/icone-32.png"
+    }
+  },
+  "icons": {
+    "16": "icones/icone-16.png",
+    "32": "icones/icone-32.png",
+    "48": "icones/icone-48.png",
+    "128": "icones/icone-128.png"
+  }
+}

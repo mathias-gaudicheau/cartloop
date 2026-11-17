@@ -1,0 +1,22 @@
+{
+  "_lisezmoi": "Une famille regroupe les produits d'hygiène et d'entretien qui répondent au même besoin, quelle que soit la marque ou la taille : un liquide vaisselle en remplace un autre. Un produit entre dans la PREMIÈRE famille dont un des mots apparaît dans son nom (l'ordre compte : lessive avant savon, liquide vaisselle avant lave-vaisselle). L'alimentaire n'a volontairement pas de famille : des tagliatelles aux œufs ne sont pas des œufs, chaque produit est suivi pour lui-même. duree_depart = en semaines, utilisée tant que le rythme réel n'est pas encore mesuré.",
+  "familles": [
+    { "nom": "Lessive", "mots": ["lessive"], "duree_depart": 8 },
+    { "nom": "Adoucissant", "mots": ["adoucissant"], "duree_depart": 8 },
+    { "nom": "Liquide vaisselle", "mots": ["liquide vaisselle"], "duree_depart": 6 },
+    { "nom": "Entretien lave-vaisselle", "mots": ["lave vaisselle", "tablettes vaisselle", "nettoyant machine", "sel regenerant", "liquide de rincage"], "duree_depart": 8 },
+    { "nom": "Éponges", "mots": ["eponge", "eponges"], "duree_depart": 6 },
+    { "nom": "Essuie-tout", "mots": ["essuie tout", "sopalin"], "duree_depart": 4 },
+    { "nom": "Papier toilette", "mots": ["papier toilette"], "duree_depart": 4 },
+    { "nom": "Mouchoirs", "mots": ["mouchoirs"], "duree_depart": 6 },
+    { "nom": "Sacs poubelle", "mots": ["sacs poubelle", "sac poubelle"], "duree_depart": 8 },
+    { "nom": "Nettoyant vitres", "mots": ["vitres"], "duree_depart": 16 },
+    { "nom": "Déodorant", "mots": ["deodorant"], "duree_depart": 6 },
+    { "nom": "Dentifrice", "mots": ["dentifrice"], "duree_depart": 6 },
+    { "nom": "Brosse à dents", "mots": ["brosse a dents"], "duree_depart": 12 },
+    { "nom": "Gel douche", "mots": ["gel douche"], "duree_depart": 6 },
+    { "nom": "Shampoing", "mots": ["shampoing", "shampooing"], "duree_depart": 8 },
+    { "nom": "Savon pour les mains", "mots": ["savon liquide", "lavant main", "lavant mains", "lavante mains", "savon mains"], "duree_depart": 6 },
+    { "nom": "Démaquillant", "mots": ["demaquillantes", "demaquiller", "demaquillant"], "duree_depart": 8 }
+  ]
+}
