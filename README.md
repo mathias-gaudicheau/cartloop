@@ -16,7 +16,7 @@ le site.
 
 ## Ce qu'elle fait
 
-- **Elle se souvient de tout.** Le site n'affiche que tes 8 dernières commandes.
+- **Elle se souvient de tout.** Le site n'affiche qu'une partie de ton historique de commandes.
   Cartloop les recopie dans ton navigateur, semaine après semaine.
 - **Elle te propose ta liste.** Au premier lancement, elle repère ce que tu achètes
   presque chaque semaine. Tu coches, tu ajustes les quantités, tu valides.
